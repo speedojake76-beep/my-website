@@ -1,0 +1,94 @@
+
+
+/* ------------------  PAGE 2 ------------------------------   */
+body {
+    font-family: sans-serif;
+    background-color: #f0f4f8; /* Light background similar to image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the cards */
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.icon-circle {
+    background-color: #e0f2fe; /* Light blue background for icon */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.icon-circle i {
+    font-size: 2.5rem;
+    color: #0ea5e9; /* Blue icon color */
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #0ea5e9;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Basic responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
